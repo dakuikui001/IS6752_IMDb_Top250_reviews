@@ -122,4 +122,4 @@ The best performing model achieves the following results:
 
 ## License
 
-This project is for educational purposes. Please respect IMDB's terms of service and robots.txt when scraping data.
+This project is for educational purposes.
