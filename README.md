@@ -23,7 +23,7 @@ The dataset contains:
 ## Project Structure
 
 ```
-group_project_imdb_review/
+IS6752_IMDb_Top250_reviews/
 ├── data/
 │   └── movies_reviews.csv          # Scraped movie and review data
 ├── scrape_movies.ipynb             # IMDB data scraping notebook
