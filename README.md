@@ -87,15 +87,17 @@ The best performing model achieves the following results:
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|---------|----------|
-| **XGBoost** | **82.14%** | 71% | 67% | 69% |
-| Random Forest | 81.86% | 75% | 64% | 68% |
-| Logistic Regression | 76.68% | 62% | 71% | 66% |
+| **XGBoost** | **82.76%** | 72% | 68% | 70% |
+| Random Forest | 82.40% | 75% | 65% | 69% |
+| Logistic Regression | 77.41% | 63% | 72% | 66% |
 
 ## Key Features
 
 ### Text Preprocessing Pipeline
 - URL and mention removal
 - Special character cleaning
+- Negation Handling:
+  A custom function uses the spaCy library to identify negation words (e.g., "not", "never") and tags subsequent verbs and adjectives with a NOT_ prefix (e.g., "not good" becomes "not NOT_good"). This is applied to both review titles and content to preserve the crucial sentiment-reversing context for the machine learning models
 - Stopword filtering
 - Porter stemming + WordNet lemmatization
 - VADER sentiment scoring
