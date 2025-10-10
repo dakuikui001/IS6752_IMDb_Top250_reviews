@@ -7,7 +7,7 @@ This project analyzes sentiment in movie reviews from IMDB's Top 250 Movies list
 ## Features
 
 - **Data Scraping**: Automated collection of movie metadata and reviews from IMDB Top 250
-- **Data Preprocessing**: Comprehensive text cleaning, tokenization, stemming, and lemmatization
+- **Data Preprocessing**: Comprehensive text cleaning, tokenization and stemming
 - **Sentiment Analysis**: VADER sentiment scoring and classification using machine learning models
 - **Data Visualization**: Interactive visualizations including word clouds, distribution plots, and genre analysis
 - **Machine Learning**: Multiple classifier comparison (Logistic Regression, Random Forest, XGBoost)
@@ -64,7 +64,7 @@ This notebook performs comprehensive sentiment analysis:
 #### Data Preparation
 - Loads and splits data into train/test sets (70/30 split)
 - Text preprocessing: cleaning, tokenization, stopword removal
-- Stemming and lemmatization for text normalization
+- Stemming for text normalization
 
 #### Exploratory Data Analysis
 - Sentiment distribution visualization
@@ -99,7 +99,7 @@ The best performing model achieves the following results:
 - Negation Handling:
   A custom function uses the spaCy library to identify negation words (e.g., "not", "never") and tags subsequent verbs and adjectives with a NOT_ prefix (e.g., "not good" becomes "not NOT_good"). This is applied to both review titles and content to preserve the crucial sentiment-reversing context for the machine learning models
 - Stopword filtering
-- Porter stemming + WordNet lemmatization
+- Porter stemming
 - VADER sentiment scoring
 
 ### Visualization Components
